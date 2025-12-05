@@ -1,4 +1,4 @@
-# How to Build & Install Python From Source On Linux
+# How to Build & Install CPython From Source On Linux
 
 ## Download The Source Code
 
