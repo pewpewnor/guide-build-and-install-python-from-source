@@ -59,7 +59,7 @@ make -j $(nproc)
 ```
 or (with number of processors = half of your CPU cores):
 ```console
-make -j $(($(nproc) / 2))
+make -j $(($(nproc) / 2 + 1))
 ```
 
 ## 5. Install
