@@ -53,13 +53,13 @@ make -j $(($(nproc) / 2))
 
 ## Install
 
-## Recommended
+### Recommended
 ```sh
 sudo make altinstall
 ```
 
 This will install your Python to `/usr/local/bin/`
 
-## Not Recommended
+### Not Recommended
 
 `sudo make install` will replace your system's `python3`, which can break your system if it depends on that specific Python (e.g. `GNOME`)
