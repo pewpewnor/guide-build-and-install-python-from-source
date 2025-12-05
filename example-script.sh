@@ -1,7 +1,11 @@
 cd ~/Downloads
 
-wget https://www.python.org/ftp/python/3.14.1/Python-3.14.1.tar.xz
-tar xf Python-3.14.1.tar.xz
+python_version="3.14.1"
+
+python_file="Python-$python_version.tar.xz"
+
+wget https://www.python.org/ftp/python/3.14.1/$python_file
+tar xf $python_file
 
 sudo apt install -y make build-essential libssl-dev zlib1g-dev \
   libbz2-dev libreadline-dev libsqlite3-dev wget curl \
