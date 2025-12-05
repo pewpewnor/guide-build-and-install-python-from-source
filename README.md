@@ -1,4 +1,4 @@
-# How to Build & Install Python From Source
+# How to Build & Install Python From Source On Linux
 
 ## Download The Source Code
 
@@ -35,18 +35,19 @@ You can also enable and disable features such as `--disable-gil`
 
 ## Compile
 
+compile with a single processor:
 ```console
 make
 ```
-or
+or (with x number of processors):
 ```console
 make -j <number of processors>
 ```
-or
+or (with number of processors = total CPU cores):
 ```console
 make -j $(nproc)
 ```
-or
+or (with number of processors = half of your CPU cores):
 ```console
 make -j $(($(nproc) / 2))
 ```
