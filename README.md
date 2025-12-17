@@ -43,6 +43,16 @@ Using `clang-19` or above is preffered for better interpreter optimizations
 
 You can also enable and disable features such as `--disable-gil`
 
+Maximum optimizated build for your specific machine (significantly increases compile time):
+```console
+./configure \
+  --enable-optimizations \
+  --with-lto \
+  --with-ensurepip=install \
+  CFLAGS="-O3 -march=native -fno-semantic-interposition" \
+  LDFLAGS="-march=native"
+```
+
 ## 4. Compile
 
 Compile with a single processor:
