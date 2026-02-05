@@ -30,6 +30,7 @@ Using `clang-19` or above is preffered for better interpreter optimizations
 
 ### Recommended:
 ```console
+chmod +x ./configure
 ./configure --enable-optimizations --with-ensurepip=install
 ```
 
